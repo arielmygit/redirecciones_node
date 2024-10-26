@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<style>
+    .calculadora {
+        width: 300px;
+        margin: 50px auto;
+        border: 2px solid rgb(0, 0, 0);
+        padding: 10px;
+        border-radius: 8px;
+        background-color: rgb(117, 143, 200);
+
+    }
+
+    input[type="button"] {
+        margin: 5px;
+        width: 60px;
+        height: 60px;
+        font-size: 20px;
+        cursor: pointer;
+        border-radius: 8px;
+
+    }
+</style>
+
+<body>
+    <script src="calculadora.js"></script>
+    <div class="calculadora">
+        <input type="text" id="pantalla" disabled>
+        <br>
+        <input type="button" value="1" onclick="agregarPantalla(1)">
+        <input type="button" value="2" onclick="agregarPantalla(2)">
+        <input type="button" value="3" onclick="agregarPantalla(3)">
+        <input type="button" value="+" onclick="agregarPantalla('+')">
+        <br>
+
+        <input type="button" value="4" onclick="agregarPantalla(4)">
+        <input type="button" value="5" onclick="agregarPantalla(5)">
+        <input type="button" value="6" onclick="agregarPantalla(6)">
+        <input type="button" value="-" onclick="agregarPantalla('-')">
+        <br>
+
+        <input type="button" value="7" onclick="agregarPantalla(7)">
+        <input type="button" value="8" onclick="agregarPantalla(8)">
+        <input type="button" value="9" onclick="agregarPantalla(9)">
+        <input type="button" value="*" onclick="agregarPantalla('*')">
+        <br>
+        <input type="button" value="C" onclick="limpiarPantalla('C')">
+        <input type="button" value="0" onclick="agregarPantalla(0)">
+        <input type="button" value="=" onclick="calcular()">
+        <input type="button" value="/" onclick="agregarPantalla('/')">
+
+    </div>
+
+    <div class="Links">
+        <h1>
+            <a href="/page2">Formulario</a>
+
+        </h1>
+        <br>
+        <h1>
+            <a href="/page3">Informacion</a>
+
+        </h1>
+    </div>
+    <style>
+        .Links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            /* Espacio entre los enlaces */
+            margin-top: 20px;
+        }
+
+        .Links a {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #007bff;
+            /* Azul para el fondo del botón */
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            /* Efecto de transición suave */
+        }
+
+        .Links a:hover {
+            background-color: #0056b3;
+            /* Azul más oscuro al pasar el cursor */
+        }
+    </style>
+
+</body>
+
+</html>
